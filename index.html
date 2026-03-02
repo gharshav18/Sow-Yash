@@ -1,230 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anniversary Surprise 💖</title>
-  <meta name="description" content="A little anniversary surprise with memories, music and fireworks." />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anniversary Surprise 💖</title>
+    <meta
+      name="description"
+      content="A little anniversary surprise with memories, music and fireworks."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="music" loop>
+      <source
+        src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3c9b7c2f3e.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
 
-<audio id="music" loop>
-<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3c9b7c2f3e.mp3" type="audio/mpeg">
-</audio>
+    <div id="lockScreen" class="screen screen--center">
+      <div class="lock-card">
+        <p class="eyebrow">Private Anniversary Space</p>
+        <h1 class="script-title">💝 Anniversary Surprise 💝</h1>
+        <p class="subtitle">Enter the secret code to unlock your story</p>
 
-<div id="lockScreen" class="screen screen--center">
-  <div class="lock-card">
-    <p class="eyebrow">Private Anniversary Space</p>
-    <h1 class="script-title">💝 Anniversary Surprise 💝</h1>
-    <p class="subtitle">Enter the secret code to unlock your story</p>
-
-    <div class="lock-form">
-      <label for="pass">Secret code</label>
-      <div class="lock-input-row">
-        <input type="password" id="pass" placeholder="Hint: it’s all about love" />
-        <button class="btn btn-primary" onclick="unlock()">Unlock</button>
-      </div>
-      <p class="hint">Tiny hint: try something simple, from the heart.</p>
-    </div>
-  </div>
-</div>
-
-<div id="main" class="hidden">
-  <header class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Wedding Anniversary</p>
-      <h1 class="hero-title">Happy Wedding Anniversary ❤️</h1>
-      <p class="hero-subtitle">Celebrating love, memories & a lifetime of togetherness.</p>
-      <div class="hero-actions">
-        <button class="btn btn-primary" onclick="scrollToMessage()">Read the message</button>
-        <button class="btn btn-ghost" onclick="scrollToGallery()">View memories</button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section id="message" class="section">
-      <div class="section-inner">
-        <h2 class="section-title">A note for you both 💞</h2>
-        <p class="section-kicker">Dear Sister &amp; Brother‑in‑law</p>
-        <div class="card card--glass">
-          <p>
-            Your love story inspires everyone around you. May your bond grow stronger, your smiles
-            brighter, and your lives happier every year.
-          </p>
-          <p>
-            Wishing you endless love, peaceful days, and countless little moments that turn into
-            unforgettable memories.
-          </p>
-          <p>Thank you for showing what true partnership, patience, and love really look like. 💗</p>
+        <div class="lock-form">
+          <label for="pass">Secret code</label>
+          <div class="lock-input-row">
+            <input
+              type="password"
+              id="pass"
+              placeholder="Hint: it’s all about love"
+            />
+            <button class="btn btn-primary" onclick="unlock()">Unlock</button>
+          </div>
+          <p class="hint">Tiny hint: try something simple, from the heart.</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="gallery" class="section section--alt">
-      <div class="section-inner">
-        <div class="section-header-row">
-          <div>
-            <h2 class="section-title">Our beautiful memories 📸</h2>
-            <p class="section-subtitle">
-              Just a tiny collection of moments that capture a very big love.
-            </p>
+    <div id="main" class="hidden">
+      <header class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">Wedding Anniversary</p>
+          <h1 class="hero-title">Happy Wedding Anniversary ❤️</h1>
+          <p class="hero-subtitle">
+            Celebrating love, memories &amp; a lifetime of togetherness.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="scrollToMessage()">
+              Read the message
+            </button>
+            <button class="btn btn-ghost" onclick="scrollToGallery()">
+              View memories
+            </button>
           </div>
         </div>
+      </header>
 
-        <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="https://picsum.photos/600/400?1" alt="Memory 1" />
-            <figcaption>That laugh you both share and never fake.</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="https://picsum.photos/600/400?2" alt="Memory 2" />
-            <figcaption>Little adventures that turned into big stories.</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="https://picsum.photos/600/400?3" alt="Memory 3" />
-            <figcaption>Quiet moments, warm hearts, and shared smiles.</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img src="https://picsum.photos/600/400?4" alt="Memory 4" />
-            <figcaption>Looking forward together, always side by side.</figcaption>
-          </figure>
+      <main>
+        <section id="message" class="section">
+          <div class="section-inner">
+            <h2 class="section-title">A note for you both 💞</h2>
+            <p class="section-kicker">Dear Sister &amp; Brother‑in‑law</p>
+            <div class="card card--glass">
+              <p>
+                Your love story inspires everyone around you. May your bond grow stronger,
+                your smiles brighter, and your lives happier every year.
+              </p>
+              <p>
+                Wishing you endless love, peaceful days, and countless little moments that
+                turn into unforgettable memories.
+              </p>
+              <p>
+                Thank you for showing what true partnership, patience, and love really look
+                like. 💗
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" class="section section--alt">
+          <div class="section-inner">
+            <div class="section-header-row">
+              <div>
+                <h2 class="section-title">Our beautiful memories 📸</h2>
+                <p class="section-subtitle">
+                  Just a tiny collection of moments that capture a very big love.
+                </p>
+              </div>
+            </div>
+
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img src="pic1.JPG" alt="Memory 1" />
+                <figcaption>That laugh you both share and never fake.</figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="pic2.JPG" alt="Memory 2" />
+                <figcaption>Little adventures that turned into big stories.</figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="pic3.JPG" alt="Memory 3" />
+                <figcaption>Quiet moments, warm hearts, and shared smiles.</figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="pic4.JPG" alt="Memory 4" />
+                <figcaption>Looking forward together, always side by side.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-inner">
+            <h2 class="section-title">Forever &amp; always 💖</h2>
+            <div class="card card--quote">
+              <p class="quote-text">
+                “Love is not measured by time, but by the small everyday moments that you
+                choose each other again and again.”
+              </p>
+              <p>
+                Here’s to more inside jokes, more late‑night talks, more celebrations, and
+                more quiet evenings that feel like home — simply because you’re together.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <p>Made with ❤️ by Harsha</p>
+          <p class="footer-note">Because some occasions deserve their own little website.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-inner">
-        <h2 class="section-title">Forever &amp; always 💖</h2>
-        <div class="card card--quote">
-          <p class="quote-text">
-            “Love is not measured by time, but by the small everyday moments that you choose each
-            other again and again.”
-          </p>
-          <p>
-            Here’s to more inside jokes, more late‑night talks, more celebrations, and more quiet
-            evenings that feel like home — simply because you’re together.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>Made with ❤️ by Harsha</p>
-      <p class="footer-note">Because some occasions deserve their own little website.</p>
+      </footer>
     </div>
-  </footer>
-</div>
 
-<canvas id="fireworks"></canvas>
+    <canvas id="fireworks"></canvas>
 
-<script>
-  const lockScreen = document.getElementById('lockScreen');
-  const mainScreen = document.getElementById('main');
-  const passwordInput = document.getElementById('pass');
-  const music = document.getElementById('music');
+    <script>
+      const lockScreen = document.getElementById('lockScreen');
+      const mainScreen = document.getElementById('main');
+      const passwordInput = document.getElementById('pass');
+      const music = document.getElementById('music');
 
-  function unlock() {
-    const value = passwordInput.value.trim().toLowerCase();
+      function unlock() {
+        const value = passwordInput.value.trim().toLowerCase();
 
-    if (value === 'love') {
-      lockScreen.classList.add('hidden');
-      mainScreen.classList.remove('hidden');
-      music.play();
-      startHearts();
-    } else {
-      passwordInput.classList.add('input-error');
-      setTimeout(() => passwordInput.classList.remove('input-error'), 400);
-      alert('Wrong code, but nice try ❤️');
-    }
-  }
+        if (value === 'love') {
+          lockScreen.classList.add('hidden');
+          mainScreen.classList.remove('hidden');
+          music.play();
+          startHearts();
+        } else {
+          passwordInput.classList.add('input-error');
+          setTimeout(() => passwordInput.classList.remove('input-error'), 400);
+          alert('Wrong code, but nice try ❤️');
+        }
+      }
 
-  function scrollToMessage() {
-    document.getElementById('message').scrollIntoView({ behavior: 'smooth' });
-  }
+      function scrollToMessage() {
+        document.getElementById('message').scrollIntoView({ behavior: 'smooth' });
+      }
 
-  function scrollToGallery() {
-    document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
-  }
+      function scrollToGallery() {
+        document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+      }
 
-  passwordInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      unlock();
-    }
-  });
-
-  function startHearts() {
-    setInterval(() => {
-      const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.innerHTML = '💖';
-      document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 6000);
-    }, 350);
-  }
-
-  const canvas = document.getElementById('fireworks');
-  const ctx = canvas.getContext('2d');
-
-  function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-
-  window.addEventListener('resize', resizeCanvas);
-  resizeCanvas();
-
-  let particles = [];
-
-  function createFirework() {
-    const originX = Math.random() * canvas.width;
-    const originY = Math.random() * (canvas.height * 0.6);
-
-    for (let i = 0; i < 80; i++) {
-      const angle = (Math.PI * 2 * i) / 80;
-      const speed = 2 + Math.random() * 2.5;
-      particles.push({
-        x: originX,
-        y: originY,
-        vx: Math.cos(angle) * speed,
-        vy: Math.sin(angle) * speed,
-        life: 80 + Math.random() * 40,
-        originalLife: 80 + Math.random() * 40,
-        color: `hsl(${Math.random() * 40 + 330}, 90%, 70%)`,
+      passwordInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          unlock();
+        }
       });
-    }
-  }
 
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+      function startHearts() {
+        setInterval(() => {
+          const heart = document.createElement('div');
+          heart.className = 'heart';
+          heart.style.left = Math.random() * 100 + 'vw';
+          heart.innerHTML = '💖';
+          document.body.appendChild(heart);
+          setTimeout(() => heart.remove(), 6000);
+        }, 350);
+      }
 
-    particles.forEach((p) => {
-      p.x += p.vx;
-      p.y += p.vy;
-      p.vy += 0.02; // gravity
-      p.life--;
+      const canvas = document.getElementById('fireworks');
+      const ctx = canvas.getContext('2d');
 
-      const alpha = p.life / p.originalLife;
-      ctx.fillStyle = p.color.replace(')', `, ${alpha})`).replace('hsl', 'hsla');
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-      ctx.fill();
-    });
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
 
-    particles = particles.filter((p) => p.life > 0);
-    requestAnimationFrame(animate);
-  }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
 
-  setInterval(createFirework, 2200);
-  animate();
-</script>
-</body>
+      let particles = [];
+
+      function createFirework() {
+        const originX = Math.random() * canvas.width;
+        const originY = Math.random() * (canvas.height * 0.6);
+
+        for (let i = 0; i < 80; i++) {
+          const angle = (Math.PI * 2 * i) / 80;
+          const speed = 2 + Math.random() * 2.5;
+          const life = 80 + Math.random() * 40;
+
+          particles.push({
+            x: originX,
+            y: originY,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
+            life,
+            originalLife: life,
+            color: `hsl(${Math.random() * 40 + 330}, 90%, 70%)`,
+          });
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        particles.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.02; // gravity
+          p.life--;
+
+          const alpha = p.life / p.originalLife;
+          ctx.fillStyle = p.color.replace(')', `, ${alpha})`).replace('hsl', 'hsla');
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+          ctx.fill();
+        });
+
+        particles = particles.filter((p) => p.life > 0);
+        requestAnimationFrame(animate);
+      }
+
+      setInterval(createFirework, 2200);
+      animate();
+    </script>
+  </body>
 </html>
