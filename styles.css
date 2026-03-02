@@ -6,7 +6,8 @@
 
 body {
   min-height: 100vh;
-  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
   color: #ffffff;
   background:
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.28), transparent 55%),
@@ -109,7 +110,8 @@ input[type='password'] {
   color: #fff;
   font-size: 0.9rem;
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, transform 0.1s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease,
+    transform 0.1s ease;
 }
 
 input[type='password']::placeholder {
@@ -139,7 +141,8 @@ input[type='password']:focus {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.2s ease, color 0.2s ease;
+  transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.2s ease,
+    color 0.2s ease;
   white-space: nowrap;
 }
 
@@ -261,7 +264,8 @@ input[type='password']:focus {
 }
 
 .card--glass {
-  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.16), transparent 55%),
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.16), transparent 55%),
     rgba(4, 2, 18, 0.7);
 }
 
