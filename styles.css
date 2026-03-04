@@ -302,8 +302,9 @@ input[type='password']:focus {
   width: 100%;
   display: block;
   height: 220px;
+  max-height: 300px;
   object-fit: cover;
-  transition: transform 0.45s ease;
+  object-position: top;
 }
 
 .gallery-item figcaption {
